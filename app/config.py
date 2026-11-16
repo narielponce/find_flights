@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     database_url: str = "postgresql+psycopg://buscaviajes:supersecretpassword@db:5432/buscaviajes_db"
-    search_provider: str = "hybrid"  # "amadeus" | "serpapi" | "hybrid"
+    search_provider: str = "serpapi"  # "serpapi" | "amadeus" | "hybrid"
 
     amadeus_client_id: str = ""
     amadeus_client_secret: str = ""
